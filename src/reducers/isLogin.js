@@ -1,4 +1,4 @@
-const isLoggingReducer = (state = false, actions) => {
+const isLoginReducer = (state = true, actions) => {
   switch (actions.type) {
     case "LOGIN":
       return !state;
@@ -7,4 +7,4 @@ const isLoggingReducer = (state = false, actions) => {
   }
 };
 
-export default isLoggingReducer;
+export default isLoginReducer;
